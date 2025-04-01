@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  height: 100%; /* Menetapkan tinggi 100% untuk html dan body */
+}
+
+body {
+  background-image: url("https://cdn.discordapp.com/attachments/768038699434508323/1356665436405497866/0be939769235d0064d40594143eb92d2.jpg?ex=67ed64a5&is=67ec1325&hm=714b0ed36b4ec55bf37902282ede64832740c04115ef6a94ef86077c599b0b91&");
+  background-repeat: no-repeat;
+  background-size: cover; /* Memastikan gambar latar belakang menutupi seluruh area */
+  background-position: center;
+}
+
+.br-50p {
+  border-radius: 50%;
+}
+
+.nav:hover {
+  background: rgba(150, 150, 150, 1);
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+.nav:hover span {
+  transition: all 0.3s;
+  color: #fff !important;
+}
+
+.p7% {
+  color: red;
+}
+
+.w-mx {
+  width: 100%;
+}
+
+.link:hover {
+  background-color: rgba(42, 42, 42, 0.5) !important;
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.link:hover div.open {
+  background-color: rgba(198, 198, 198, 0.555) !important;
+  transition: all 0.3s;
+}
+
+.link:hover div.open span,
+.link:hover div.open i {
+  color: rgb(22, 22, 22) !important;
+  transition: all 0.3s;
+}
+
+.nav-menu {
+  transform: translateY(100%);
+  transition: 0.5s;
+  position: fixed;
+  bottom: 0;
+}
+
+.nav-menu.active {
+  display: flex !important;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh !important;
+    justify-content: center;
+  }
+  main {
+    margin: 0;
+  }
+  nav a {
+    font-size: 1.5rem !important;
+  }
+  nav div span {
+    font-size: 2rem !important;
+  }
+}
